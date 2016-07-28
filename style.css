@@ -1,48 +1,66 @@
 html {
 	height: 100%;
-	max-width: 1750px;
+	box-sizing: border-box;
+	background-color: #0A0A0A;
+
 }
 
 body {
 	background-color: #0A0A0A;
 	height: 100%;
+	overflow: visible;
 }
 
-a, a:hover, a:focus, a:visited {
+a,
+a:hover,
+a:focus,
+a:visited {
 	color: #0A0A0A;
 	text-decoration: none;
 }
 
 .wrapper {
 	background-color: #0A0A0A;
-	margin: 1%;
-	min-height: 100%;
+	min-height: fit-content;
 	position: relative;
 }
 
 .left,
 .center,
 .right {
-	height: 100%;
-	display: inline-block;
+	min-height: 100%;
 	vertical-align: top;
-	overflow: hidden;
+	margin-top: 0;
+	margin-bottom: 0;
+	flex:1;
 }
 
-.left,
-.right {
-	position: absolute;
-}
 
 .left>div,
 .center>div,
 .right>div {
 	min-height: fit-content;
 }
+.com-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-7,
+.col-sm-6,
+.col-md-6, 
+.col-lg-6 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 
 .left>div,
+.center>div,
 .right>div {
 	position: relative;
+	padding: 10px;
 }
 
 .white {
@@ -98,7 +116,8 @@ a, a:hover, a:focus, a:visited {
 
 .r2,
 .r4,
-.r6, .r8 {
+.r6,
+.r8 {
 	height: 2%;
 }
 
@@ -109,7 +128,9 @@ a, a:hover, a:focus, a:visited {
 .r5 {
 	height: 27%;
 }
-.r7, .r9 {
+
+.r7,
+.r9 {
 	height: 22%;
 }
 
@@ -118,53 +139,58 @@ a, a:hover, a:focus, a:visited {
 	max-width: 90%;
 	border: 5px solid #0A0A0A;
 }
-a.credits:hover {
+
+.credits:hover {
 	text-decoration: underline;
 }
 
 .left {
-	width: 7%;
+
 	top: 0;
 	left: 0;
 	bottom: 0;
 }
 
 .center {
-	width: 36%;
-	margin: 0 51% 0 9%;
-	padding: 1.5%;
 	position: relative;
 }
 
 .right {
-	width: 53%;
 	top: 0;
 	right: 0;
 	bottom: 0;
 }
 
-h1, h2
-h3 {
+h1,
+h2 h3 {
 	color: #0A0A0A;
 	line-height: 100%;
 	margin: 0;
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
 	font-family: 'Righteous', sans-serif;
 }
 
 h1 {
 	font-size: 400%
 }
+
 h2 {
 	font-size: 300%;
 }
+
 h3 {
 	font-size: 200%;
 }
+
 h4 {
 	font-size: 175%;
 }
+
 .title {
 	position: relative;
 	top: 50%;
@@ -186,14 +212,14 @@ h4 {
 }
 
 .links {
-	border: 2px 3px 3px 3px;
+	border: 3px;
 	border-style: solid;
 	border-color: #0A0A0A;
 	margin-top: 4%;
 }
 
 .link {
-	border: 3px 2px 2px 2px;
+	border: 2px;
 	border-style: solid;
 	border-color: #0A0A0A;
 	margin: 0;
@@ -227,7 +253,7 @@ h4 {
 .rphotos>figure {
 	display: inline-block;
 	width: 33%;
-	padding: 1.5%;
+
 	vertical-align: bottom;
 	margin: 0;
 }
@@ -235,5 +261,5 @@ h4 {
 .rphoto {
 	width: 100%;
 	height: auto;
-	border: 2px solid #0A0A0A;
+
 }
