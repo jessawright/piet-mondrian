@@ -1,3 +1,6 @@
+
+
+
 html {
 	height: 100%;
 	box-sizing: border-box;
@@ -106,9 +109,9 @@ a:visited {
 
 .r1 {
 	flex: 6;
-display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .r2,
@@ -120,29 +123,29 @@ display: flex;
 
 .r3 {
 	flex: 15;
-	  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .r5 {
 	flex: 27;
-	  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .r7,
 .r9 {
 	flex: 22;
-	  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .portrait-photo {
 	margin-top: 5%;
-	max-width: 90%;
+	width: 90%;
 	border: 5px solid #0A0A0A;
 }
 
@@ -174,7 +177,6 @@ h3 {
 h4 {
 	font-size: 175%;
 }
-
 
 .bio-head {
 	margin: 10% 0 5% 0;
@@ -222,20 +224,15 @@ h4 {
 	background-color: #0D1F75;
 	color: #E6E6DC;
 }
-.title {
-
-}
 
 .rphotos {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
-	
-	}
+}
 
 .rphotos>figure {
 	flex: 1;
-	
 	margin: 5px;
 }
 
@@ -243,4 +240,20 @@ h4 {
 	width: 100%;
 	height: auto;
 	border: 2px solid #0A0A0A;
+
+}
+
+figcaption {
+	font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .hidden-xxs {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+	html, body {
+		font-size: 75%;
+	}
 }
